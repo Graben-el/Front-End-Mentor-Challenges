@@ -71,6 +71,7 @@ table {
 
 th, td {
     border: 2px solid black;
+    color: black;
     border-radius: 4px;
     background-color: var(--branco);
     transition: 0.2s ease-in-out;
@@ -79,7 +80,6 @@ th, td {
 th {
     padding: 20px;
     background-color: var(--laranja);
-    color: black;
     font-size: 26px;
     font-weight: 700;
 }
