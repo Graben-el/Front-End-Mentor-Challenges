@@ -4,7 +4,7 @@
 List of my solutions for <a href="https://www.frontendmentor.io/challenges" target="_blank" style="color: tomato;">Front-end Mentor's</a> challenges ( submission --> mm/dd/yyyy ). <br><br>
 
 
-( Github Pages: <a href="#" target="_blank" style="color: tomato;"></a> )
+( Github Pages: <a href="#" target="_blank" style="color: tomato;">https://graben-el.github.io/Front-End-Mentor-Challenges/</a> )
 </section>
 
 <img src="./assets/demo.gif">
