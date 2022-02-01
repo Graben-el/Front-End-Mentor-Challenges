@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --cor-background: #424455;
+    --cor-fundo-tabela: #6272a4;
+    --branco: #f8f8f2;
+    --laranja: #ffb86c;
+    --vermelho: #ff5555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-size: 34px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 120em;
+    height: 100vh;
+    background-color: var(--cor-background);
+}
+
+
+
+a {
+    text-decoration: none;
+    padding: 12px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+caption {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--branco);
+    text-shadow: 0px 0px 25px var(--laranja);
+}
+
+caption a:visited, caption a:hover {
+    color: white;
+}
+
+
+
+table {
+    border: 4px solid var(--branco);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--cor-fundo-tabela);
+    box-shadow: 0px 0px 10px 1px var(--laranja);
+}
+
+th, td {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: var(--branco);
+    transition: 0.2s ease-in-out;
+}
+
+th {
+    padding: 20px;
+    background-color: var(--laranja);
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+th:hover {
+    background-color: #ffb86cec;
+}
+
+
+td {
+    padding: 10px;
+    font-size: 22px;
+}
+
+td:hover {
+    background-color: #f8f8f2de;
+    transform: scale(1.015);
+}
+
+.link:hover {
+    color: var(--vermelho);
+    font-weight: 600;
+}
