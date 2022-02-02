@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Lobby with all my solutions for Front-End Mentor's Challenges](https://your-solution-url.com)
-- Live Site URL: [NFT preview card component solution](https://your-live-site-url.com)
+- Solution URL: [Lobby with all my solutions for Front-End Mentor's Challenges](https://graben-el.github.io/Front-End-Mentor-Challenges/)
+- Live Site URL: [NFT preview card component solution](https://graben-el.github.io/Front-End-Mentor-Challenges/NFT%20Card%20Preview/index.html)
 
 ## My process
 
