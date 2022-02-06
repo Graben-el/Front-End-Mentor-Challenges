@@ -16,7 +16,6 @@
 }
 
 
-
 h1 {
     font-size: 34px;
 }
@@ -75,6 +74,7 @@ th, td {
     border-radius: 4px;
     background-color: var(--branco);
     transition: 0.2s ease-in-out;
+    text-align: center;
 }
 
 th {
@@ -102,4 +102,30 @@ td:hover {
 .link:hover {
     color: var(--vermelho);
     font-weight: 600;
+}
+
+
+@media (max-width: 425px) {
+    .submission {
+        display: none;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    a  {
+        padding: 0px;
+    }
+
+    caption {
+        font-size: 25px;
+    }
+
+    th {
+        font-size: 19px;
+    }
+    td {
+        font-size: 95%;
+    }
 }

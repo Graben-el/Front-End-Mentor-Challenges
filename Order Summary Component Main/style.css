@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    /* a way to make using rem unity easier to convert -> 1rem = 10px*/
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    color: var(--bright-blue);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+a:visited {
+    color: var(--bright-blue);
+}
+
+a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/pattern-background-desktop.svg) center top no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 635px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+header .img {
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background:  url(./images/illustration-hero.svg) center center no-repeat;
+    background-size: cover;    
+}
+
+header h1 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+header p {
+    margin-top: 15px;
+    color: var(--desaturated-blue);
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.plan-chart {
+    background-color: hsla(226, 41%, 92%, 0.24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto ;
+    padding: 20px 25px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.plan-chart .plan-info {
+    display: flex;
+}
+
+.plan-chart .plan-info div {
+    margin-left: 5px;
+}
+
+.plan-chart .plan-info::before {
+    content: "" url(./images/icon-music.svg);
+    margin-right: 15px;
+    background-size: cover;
+}
+
+.plan-chart .plan-info .plan {
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+
+.plan-chart .plan-info .price {
+    color: var(--desaturated-blue);
+}
+
+footer .payment {
+    width: 350px;
+    background-color: var(--bright-blue);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 5px auto;
+    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 12px 15px 10px hsla(245, 75%, 52%, 0.158);
+    transition: 0.2s ease-in-out;
+}
+
+footer .payment:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+footer .cancel {
+    margin: 30px auto 0;
+    width: 100px;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: 1.4rem;
+    transition: 0.05s ease-in;
+}
+
+footer .cancel:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--bright-blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media (max-width: 450px) {
+    main {
+        width: 90%;
+        height: 610px;
+    }   
+
+    a {
+        font-size: 85%;
+    }
+
+    header h1 {
+        margin: 35px auto 20px;
+    }
+
+    header p {
+        padding: 0 35px;
+    }
+
+    .plan-chart,
+    .plan-info {
+        width: 85%;
+    }
+    
+    .plan-chart {
+        padding: 15px 20px;
+    }
+
+    .plan-chart .plan-info div {
+        margin: 3px 10px 0 ;
+    }
+
+    .plan-info div p {
+        font-size: 90%;
+    }
+
+    .plan-chart .plan-info::before {
+       margin-right: 10px;
+    }
+
+    footer .payment {
+        width: 85%;
+    }
+
+    footer .cancel {
+        font-size: 1.5rem;
+    }
+}
