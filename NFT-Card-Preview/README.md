@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Lobby with all my solutions for Front-End Mentor's Challenges](https://graben-el.github.io/Front-End-Mentor-Challenges/)
-- Live Site URL: [NFT preview card component solution](https://graben-el.github.io/Front-End-Mentor-Challenges/NFT%20Card%20Preview/index.html)
+- Live Site URL: [NFT preview card component solution](https://graben-el.github.io/Front-End-Mentor-Challenges/NFT-Card-Preview/index.html)
 
 ## My process
 
