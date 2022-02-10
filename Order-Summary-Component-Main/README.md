@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Lobby with all my solutions for Front-End Mentor's Challenges](https://graben-el.github.io/Front-End-Mentor-Challenges/)
-- Live Site URL: [Order summary card solution](https://graben-el.github.io/Front-End-Mentor-Challenges/Order%20Summary%20Component%20Main/index.html)
+- Live Site URL: [Order summary card solution](https://graben-el.github.io/Front-End-Mentor-Challenges/Order-Summary-Component-Main/index.html
 
 ## My process
 
