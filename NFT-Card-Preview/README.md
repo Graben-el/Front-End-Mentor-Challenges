@@ -64,13 +64,13 @@ I know that it isn't the best way to do it, though. More experienced people told
 I also learned how to apply transparent overlay over a image, by covering it with an empty container where I activate the overlay setting with the hover pseudo-class.
 
 
-## Author
+  ## Author
 
-- Website - [Gabriel Rodrigues da Silva](https://github.com/Graben-el?tab=repositories)
-- Frontend Mentor - [@Graben-el](https://www.frontendmentor.io/profile/Graben-el)
-- Twitter - [@gabriel_ukisuke](https://twitter.com/gabriel_ukisuke)
+  - Website - [Gabriel Rodrigues da Silva](https://github.com/Graben-el?tab=repositories)
+  - Frontend Mentor - [@Graben-el](https://www.frontendmentor.io/profile/Graben-el)
+  - Twitter - [@gabriel_ukisuke](https://twitter.com/gabriel_ukisuke)
 
 
-## Acknowledgments
+  ## Acknowledgments
 
-Cheers to DevEmDobro team/community. I've learnt a lot of things in just a few weeks of course. 
+  Cheers to DevEmDobro team/community. I've learnt a lot of things in just a few weeks of course. 

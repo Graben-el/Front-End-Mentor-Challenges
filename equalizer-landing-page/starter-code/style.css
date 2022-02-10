@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --android-button: #FCFAF9;
+    --android-button-hover: #FFB964;
+    --ios-button: #191826;
+    --ios-button-hover: #66E2DC;
+    --premium-div-bg: #FA7453;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--android-button);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--android-button);
+}
+
+body {
+    background: url(./assets/bg-main-desktop.png);
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.body-pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header {
+    padding: 62px 0 0 165px;
+}
+
+.content {
+    margin: 127px 0px 321px 165px;
+}
+
+.content .presentation h1 {
+    font-size: 8.8rem;
+    font-weight: 700;
+    width: 1015px;
+    line-height: 88px;
+}
+
+.content .presentation p {
+    font-size: 2.2rem;
+    width: 825px;
+    line-height: 34px;
+    margin: 40px 0 321px 0;
+}
+
+.plan {
+    position: relative;
+    background-color: #191826;
+    width: 1110px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.plan .premium-pattern {
+    margin: 0 0 172px 336px;
+}
+
+.plan .illustration {
+    position: absolute;
+    left: 102px;
+    bottom: 171px;
+    width: 312px;
+    height: 642px;
+    overflow: visible;
+}
+
+.plan .premium-offer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 95px;
+    top: 90px;
+    width: 446px;
+    height: 625px;
+    padding: 58px 59px 48px 54px;
+    border-radius: 10px;
+    background-color: var(--premium-div-bg);
+    overflow: visible;
+}
+
+.plan .premium-offer h2 {
+    color: var(--android-button);
+    font-size: 4.0rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.plan .premium-offer .premium-description {
+    font-size: 2.0rem;
+    color: var(--android-button);
+    line-height: 34px;
+    width: 333px;
+    margin-bottom: 39px;
+}
+
+.plan .premium-offer .price {
+    display: flex;
+    font-weight: 700;
+    color: var(--android-button);
+    font-size: 6.5rem;
+    margin-bottom: 46px;
+}
+
+.plan .premium-offer .price .dollar {
+    margin-right: 16px;
+}
+
+.plan .premium-offer .price .month {
+    font-size: 2.0rem;
+    align-self: center;
+}
+
+.plan .premium-offer a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.plan .premium-offer a p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.plan .premium-offer .ios {
+    background-color: var(--ios-button);
+    margin-bottom: 16px;
+    transition: 0.1s ease-in-out;
+}
+
+.plan .premium-offer .ios:hover {
+    background-color: var(--ios-button-hover);
+}
+
+.plan .premium-offer .ios::before {
+    content: url(./assets/icon-apple.svg);
+    margin-right: 7.92px;
+}
+
+.plan .premium-offer .android {
+    background-color: var(--android-button);
+    color: #191826;
+    transition: 0.2s ease-in-out;
+}
+
+.plan .premium-offer .android:hover {
+    background-color: var(--android-button-hover);
+}
+
+.plan .premium-offer .android::before {
+    content: url(./assets/icon-android.svg);
+    margin-right: 7.92px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 79px;
+    margin: 202px 165px 91px;
+}
+
+.footer .logo-footer {
+    width: 146px;
+    height: 32px;
+    align-self: flex-start;
+}
+
+.footer .copyright {
+    font-size: 1.6rem;
+    width: 366px;
+    line-height: 26px;
+}
+
+.footer .copyright a {
+    color: black;
+    font-weight: 700;
+}
+
+.footer .social-media a {
+    margin-left: 20px;
+}
