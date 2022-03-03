@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Lobby with all my solutions for Front-End Mentor's Challenges](https://graben-el.github.io/Front-End-Mentor-Challenges/)
-- Live Site URL: [Meet Landing Page Solution](https://your-live-site-url.com)
+- Live Site URL: [Meet Landing Page Solution](https://graben-el.github.io/Front-End-Mentor-Challenges/meet-landing-page/meet-landing-page/starter-code/index.html)
 
 ## My process
 
