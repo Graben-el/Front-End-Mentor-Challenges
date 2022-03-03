@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../responsive.gif)
+![](./responsive.gif)
 
 
 ### Links
