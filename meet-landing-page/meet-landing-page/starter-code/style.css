@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+:root {
+    --b1-color: #4D96A9;
+    --b1-color-hover: #71C0D4;
+    --b2-color: #855FB1;
+    --b2-color-hover: #B18BDD;
+    --paragraph: #87879D;
+    --highlighted-text: #4D96A9;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+body {
+    max-width: 1440px;
+    height: 1895px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #28283D;
+    margin-left: 10.72px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+}
+
+.header .balls {
+    display: flex;
+    width: 28px;
+    height: 28px;
+}
+
+.header .ball {
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+}
+
+.header .greenish-ball {
+    align-self: flex-end;
+    background-color: var(--b1-color);
+}
+
+.header .purple-ball {
+    align-self: flex-start;
+    background-color: var(--b2-color);
+}
+
+main {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    max-width: 1504px;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.hero .tablet-hero {
+    display: none;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 540px;
+    margin: 0 88px;
+}
+
+.hero-text h2 {
+    font-size: 6.4rem;
+    font-weight: 900;
+    line-height: 64px;
+    margin-bottom: 34px;
+}
+
+.hero-text p {
+    width: 540px;
+    font-size: 1.8rem;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.hero-text .buttons {
+    display: flex;
+}
+
+.button {
+    margin: 0 8px;
+    padding: 16px 30px;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 900;
+    transition: 0.2s ease-in-out;
+}
+
+
+.hero-text span,
+.footer span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #8FE3F9;
+}
+
+.hero-text .download {
+    background-color: var(--b1-color);
+}
+
+.hero-text .download:hover {
+    background-color: var(--b1-color-hover);
+}
+
+.hero-text .what-is-it,
+.footer .download-footer {
+    background-color: var(--b2-color);
+}
+
+.hero-text .what-is-it:hover,
+.footer .download-footer:hover {
+    background-color: var(--b2-color-hover);
+}
+
+.section-1 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 110px 0 184px;
+}
+
+.section-1 .pictures {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-1 .pictures img {
+    width: 255px;
+    height: 242px;
+    margin: 15px 15px;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.section-1 .pictures img:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+.section-1 .text {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 72px;
+}
+
+.section-1 .purpose {
+    color: var(--b1-color);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+    transition: 0.2s;
+}
+
+.section-1 .purpose:hover {
+    opacity: 0.8;
+}
+
+.section-1 h3 {
+    width: 45%;
+    align-self: center;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 44px;
+    margin-bottom: 32px;
+}
+
+.section-1 .how-to-use {
+    margin: 0 auto;
+    width: 52%;
+    max-width: 540px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+.footer {
+    position: relative;
+    height: 308px;
+    background: url(./assets/desktop/image-footer.jpg) center center no-repeat;
+    background-size: cover;
+    color: #FAFAFA;
+}
+
+.footer .cover {
+    width: 100%;
+    height: 100%;
+    background-color: #599aacd7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .number2 {
+    position: absolute;
+    top: -115px;
+}
+
+.footer h3 {
+    font-size: 4rem;
+    font-weight: 900;
+    max-width: 350px;
+}
+
+.footer p {
+    font-size: 1.8rem;
+    width: 335px;
+}
+
+.footer span {
+    color: #D9B8FF;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 48px;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .hero .desktop-hero {
+        display: none;
+    }
+
+    .hero .tablet-hero {
+        display: block;
+        margin-bottom: 72px;
+    }
+
+    .section-1 .text {
+        width: 573px;
+        margin-bottom: 192px;
+    }
+
+    .section-1 .pictures img {
+        width: 164px;
+        height: 156px;
+        margin-right: 6px;
+    }
+
+    .section-1 h3 {
+        width: 500px;
+    }
+
+    .section-1 .how-to-use {
+        width: inherit;
+    }
+
+    .footer {
+        height: 428px;
+        background: url(./assets/tablet/image-footer.jpg) center center no-repeat;
+    }
+
+    .footer .cover {
+        height: inherit;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .footer .cover p {
+        width: 573px;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 327px;
+        margin: 0;
+    }
+
+    .hero-text h2 {
+        font-size: 4rem;
+        line-height: 44px;
+    }
+
+    .hero-text p {
+        width: inherit;
+        font-size: 16px;
+
+    }
+
+    .hero .tablet-hero {
+        width: 414px;
+    }
+
+    .hero-text .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 8px 0;
+        width: 193px;
+    }
+
+    .section-1 {
+        margin-top: 64px;
+        margin-bottom: 172px;
+        width: 100%;
+    }
+
+    .section-1 h3, 
+    .section-1 .how-to-use {
+        width: 327px;
+    }
+
+    .section-1 h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .section-1 .purpose {
+        font-size: 16px;
+
+    }
+
+    .section-1 .text {
+        margin-bottom: 176px;
+    }
+
+    .footer {
+        height: 428px
+
+    }
+
+    .footer .cover p {
+        width: 327px;
+        line-height: 26px;
+    }
+
+    .footer h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-1 .pictures img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0 ;
+    }
+
+    .section-1 .pictures img:hover {
+        transform: scale(1)
+    }
+}

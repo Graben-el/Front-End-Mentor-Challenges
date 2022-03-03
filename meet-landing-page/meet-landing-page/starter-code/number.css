@@ -1,0 +1,39 @@
+.number1 {
+    margin-bottom: 64px;
+}
+
+.number1,
+.number2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #87879D;
+    background-color: #FAFAFA;
+    border-radius: 50px;
+}
+
+.number1 .line,
+.number2 .line {
+    width: 1px;
+    height: 84px;
+    border: 1px solid #87879d3d;
+    opacity: 0.25;
+}
+
+.number1 .circle,
+.number2 .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #87879d3d;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.number1 .circle p,
+.number2 .circle p {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
