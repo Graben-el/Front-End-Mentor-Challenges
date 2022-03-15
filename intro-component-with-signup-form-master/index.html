@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <main class="container">
+    <header class="header">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </header>
+
+    <section class="register">
+
+      <div class="promo">
+        <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+      </div>
+
+      <form class="form" autocomplete="off">
+        <div class="inputs">
+
+          <div class="input-container input-name">
+            <input type="text" class="input name" placeholder="First Name">
+            <div class="error-pack hidden">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+              <div class="error">First Name cannot be empty</div>
+            </div>
+          </div>
+
+          <div class="input-container input-last-name">
+            <input type="text" class="input last-name" placeholder="Last Name">
+            <div class="error-pack hidden">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+              <div class="error">Last Name cannot be empty</div>
+            </div>
+          </div>
+
+          <div class="input-container input-email">
+            <input type="text" class="input email" placeholder="Email Adress">
+            <div class="error-pack hidden">
+              <div class="email-error">
+                <p class="email-example">email@example/com</p>
+                <svg class="svg-email" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                    <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                  </g>
+                </svg>
+              </div>
+              <div class="error">Looks like it is not an email</div>
+            </div>
+          </div>
+
+          <div class="input-container input-password">
+            <input type="password" class="input password" placeholder="Password">
+            <div class="error-pack hidden">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+              <div class="error">Password cannot be empty</div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" action="index.html" class="btn">Claim your free trial</button>
+
+        <p class="terms">
+          By clicking the button, you are agreeing to our <a href="#" class="terms-link">Terms and Services</a>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+@mixin display-flex($justify: center, $align: center, $flex-dir: column) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align; 
+    flex-direction: $flex-dir;
+};
+
+@mixin size($width, $height) {
+    width: #{$width};
+    height: #{$height};
+};
+
+@mixin text-style($color: #fff, $weight: 500, $size: 1.6rem, $line-height: 26px) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+};
+
+@mixin mobile-425px {
+    @media (max-width: 425px) {
+        @content
+    }
+};
+
+@mixin mobile-375px {
+    @media (max-width: 375px) {
+        @content
+    }
+}
