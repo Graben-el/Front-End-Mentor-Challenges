@@ -1,5 +1,5 @@
-import { generateAdvice } from '/js/services/generateAdvice.js'
-import { adviceData as data } from '/js/objects/getAdviceData.js'
+import { generateAdvice } from './services/generateAdvice.js'
+import { adviceData as data } from './objects/getAdviceData.js'
 
 const idNumber = document.querySelector('#id');
 const adviceText = document.querySelector('.advice-text');
