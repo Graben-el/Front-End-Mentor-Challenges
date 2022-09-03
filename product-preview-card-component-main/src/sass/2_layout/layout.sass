@@ -1,0 +1,130 @@
+@use '../1_base/variables'
+@use '../1_base/mixins'
+
+main
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 90%
+    
+    @include mixins.mobile
+        height: 80%
+
+    
+#card
+    display: flex    
+    background-color: #fff
+    width: fit-content
+    max-width: 80rem
+    height: fit-content
+    border-radius: 15px
+
+    @include mixins.mobile
+        flex-direction: column
+        height: fit-content
+
+
+
+#image-container, #text-container
+    width: 50%
+
+#image-container
+    background: urL(variables.$desk-bgi) center center no-repeat
+    background-size: cover
+    border-radius: 15px 0 0 15px
+    
+    @include mixins.mobile
+        background: urL(variables.$mobile-bgi) center center no-repeat
+        background-size: cover
+        width: 100%
+        border-radius: 15px 15px 0 0
+        height: 300px
+        
+    
+#text-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 35px
+
+    @include mixins.mobile
+        width: 100%
+        padding: 30px
+
+    #header
+        margin-bottom: 3rem
+
+        @include mixins.mobile
+            margin-bottom: 2rem
+
+        h1
+            color: variables.$text-color
+            letter-spacing: 10px
+            text-transform: uppercase
+            font-weight: bold
+            margin-bottom: 3rem
+            font-size: variables.$fs
+            font-family: Arial, Helvetica, sans-serif
+
+            @include mixins.mobile
+                margin-bottom: 2rem
+            
+        
+        .title
+            font-size: 4.4rem
+            line-height: 45px
+            width: 90%
+
+            @include mixins.mobile
+                width: 100%
+                font-size: 3.4rem
+                line-height: normal
+            
+    #details
+        margin-bottom: 3rem
+
+        .description
+            font-size: 1.8rem
+            font-family: Arial, Helvetica, sans-serif
+            font-weight: normal 
+            line-height: 30px
+            letter-spacing: 1px
+            width: 90%
+            color: variables.$text-color
+            margin-bottom: 2rem
+
+            @include mixins.mobile
+                font-size: 1.45rem
+                width: 100%
+    
+        .prices
+            display: flex
+            gap: 30px
+            align-items: center
+            color: variables.$text-color
+
+            .discount
+                font-size: 3.8rem
+                color: variables.$primary-color
+
+            .price-default
+                text-decoration: line-through
+                font-size: 1.5rem
+
+    .add-to-cart
+        padding: 15px
+        width: 95%
+        border-radius: 10px
+        border: none
+        background-color: variables.$primary-color
+        color: white
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: 400
+        font-size: 1.8rem
+
+        span
+            margin-left: 10px
+        
+        &:hover
+            background-color: variables.$button-hover
+            cursor: pointer
